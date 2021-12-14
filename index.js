@@ -3,7 +3,7 @@ const http = require('http')
 const express = require('express')
 const socketio = require('socket.io')
 const { addUser, getUser, getUsersInRoom, removeUser } = require('./src/utils/users')
-const { generateMessage, generateLocationMessage } = require('./src/utils/users')
+const { generateMessage, generateLocationMessage } = require('./src/utils/messages')
 
 const app = express()
 const server = http.createServer(app)
